@@ -1,0 +1,97 @@
+==== DICAS BASICAS ====
+
+:::: GIT INIT
+Inicia o repositório.
+
+----
+:::: GIT STATUS
+Com esse comando (git status), você sabera como está a situação de um determinado arquivo.
+
+:::: GIT ADD
+Com esse comando (git add <nome-do-arquivo> ou git add .), você inseri os arquivos alterados ou criados em uma area para stage.
+- Ex:
+git add <nome-do-arquivo>
+git add . (add todos os arquivos)
+
+----
+
+:::: GIT COMMIT
+Com o comando (git commit -m), você rastrea o arquivo e insere uma mensagem.
+- Ex:
+git commit -m "sua mensagem"
+O (-m), indica que você vai inserir uma mensagem entre aspas ("").
+
+----
+
+:::: GITIGNORE
+No arquivo .gitignore, você deve inserir os arquivos que deseja ser ignorado em seu projeto.
+- Ex:
+leia.txt (Apenas está ignorando este arquivo)
+*txt (Está ignorando todos os arquivos .txt)
+
+Dessa forma é só usar para os arquivos que deseja ignorar
+
+----
+
+:::: CLONE
+Com o comando (git clore), você clona o repositorio de um projeto.
+- Ex:
+git clone 'caminho-do-repositorio'
+git clone https://github.com/tiesco-assis/single-page.git
+
+----
+
+:::: PUSH
+Com o comando (git push), você sobe as alterações que você fez no repositorio clonado para o repositório master no github
+- Ex:
+git push
+
+Lembrando que você precisa ter permissão para fazer o push
+
+----
+
+:::: PULL
+Com o comando (git pull), você atualiza o projeto local.
+Situação: Uma pessoa altera um arquivo no projeto master que está no github, para você pegar essas atualização em seu projeto local clonado,
+você precisa dar um pull.
+- Ex:
+git pull
+
+----
+
+:::: BRANCHES
+Com o comando (git branch <nome-da-branch>), você cria uma outra area para desenvolver determinada parte de um projeto e depois realocar na branch master
+- Ex: 
+git branch contato
+
+cria e entra na branch
+git checkout -b <nome-da-branch>
+
+----
+
+:::: GIT CHECKOUT
+Com o comando (git checkout <nome-da-branch>), você acessa a branch que você criou.
+- Ex git checkout contato
+
+----
+
+:::: MERGE
+Com o comando (git merge <nome-da-branch>), você mescla a branch que você criou.
+Lembrando para para usar esse comando, você precisa estar na branch master
+- Ex:
+git merge <nome-da-branch>
+git merge contato
+
+----
+
+:::: EXCLUIR UMA BRANCHE
+Com o comando (git branch -d <nome-da-branch>), você exclui a branch que criou.
+- Ex:
+git branch -d contato
+
+----
+
+:::: REBASE
+Fazer alguns testes
+
+
