@@ -36,6 +36,14 @@ hr{width: 20%; max-width:100px; border: 2px solid #d12121; margin: 0 auto; margi
 .icon{vertical-align: middle;}
 p strong{vertical-align: baseline; font-weight: 700;}
 
+/* ----- tags Hs ----- */
+h1{font-size: 1.5em;}
+h2{font-size: 1.12em;}
+h3{font-size: 0.875em;}
+h4{font-size: 0.750em;}
+h5{font-size: 0.625em;}
+h6{font-size: 0.375em;}
+
 /* ----- CONTAINERS E CONTENTS ----- */
 .container{width: 100%; height: auto; margin:0 auto;}
 .container-topo{width: 100%; height: 100%; margin:0 auto;}
