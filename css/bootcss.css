@@ -68,16 +68,16 @@ h6{font-size: 0.375em;}
 .content-95-1300{display: block; margin: 0 auto; padding: 30px 0; width: 95%; max-width: 1300px; -webkit-transition:all 0.5s ease; transition:all 0.5s ease;}
 
 /* ----- BOXs ----- */
-.box30{width: 30%; float: left;}
-.box35{width: 35%; float: left;}
-.box40{width: 40%; float: left;}
-.box45{width: 45%; float: left;}
-.box50{width: 50%; float: left;}
-.box55{width: 55%; float: left;}
-.box60{width: 60%; float: left;}
-.box65{width: 65%; float: left;}
-.box70{width: 70%; float: left;}
-.box100{width: 100%; float: left;}
+.box30{width: 30%; float: left; transition:all 0.5s ease;}
+.box35{width: 35%; float: left; transition:all 0.5s ease;}
+.box40{width: 40%; float: left; transition:all 0.5s ease;}
+.box45{width: 45%; float: left; transition:all 0.5s ease;}
+.box50{width: 50%; float: left; transition:all 0.5s ease;}
+.box55{width: 55%; float: left; transition:all 0.5s ease;}
+.box60{width: 60%; float: left; transition:all 0.5s ease;}
+.box65{width: 65%; float: left; transition:all 0.5s ease;}
+.box70{width: 70%; float: left; transition:all 0.5s ease;}
+.box100{width: 100%; float: left; transition:all 0.5s ease;}
 
 /* ----- BACKGROUND -----*/
 .bg-blue{background: #197394;}
@@ -447,7 +447,10 @@ h6{font-size: 0.375em;}
 
 
  /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {  }
+@media (max-width: 575.98px) { 
+    /* ----- BOXs ----- */
+    .box30, .box35, .box40, .box45, .box50, .box55, .box60, .box65, .box70{width: 100%;}
+ }
 
 /*  Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {  }
