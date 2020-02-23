@@ -28,35 +28,35 @@
                 <form name="" class="" id="" method="post" action="">
                     <ul class="produtos-conteudos">
                         <li class="produto-selecao">
-                            <input type="checkbox" name="curso-php" class="curso-php" id="curso-php" value="Curso de PHP">
+                            <input type="checkbox" name="curso-php" class="curso-php" id="curso-php" value="459.99">
                             <label for="curso-php">
                                 <div class="produtos-icons"><i class="fab fa-php icons-prod"></i></div>
                                 <div class="label-txt">Curso de<br> <strong>PHP OO</strong></div>
-                                <div class="label-valor">R$ 189,00</div>
+                                <div class="label-valor">R$ 459,99</div>
                             </label>
                         </li>
                         <li class="produto-selecao">
-                            <input type="checkbox" name="curso-php" class="curso-php" id="curso-jquery" value="Curso de PHP">
+                            <input type="checkbox" name="curso-php" class="curso-php" id="curso-jquery" value="359.00">
                             <label for="curso-jquery">
                                 <div class="produtos-icons"><i class="fab fa-js icons-prod"></i></div>
                                 <div class="label-txt">Curso de<br> <strong>JQuery</strong></div>
-                                <div class="label-valor">R$ 189,00</div>
+                                <div class="label-valor">R$ 359,00</div>
                             </label>
                         </li>
                         <li class="produto-selecao">
-                            <input type="checkbox" name="curso-php" class="curso-php" id="curso-bootstrap" value="Curso de PHP">
+                            <input type="checkbox" name="curso-php" class="curso-php" id="curso-bootstrap" value="359.00">
                             <label for="curso-bootstrap">
                                 <div class="produtos-icons"><i class="fab fa-bootstrap icons-prod"></i></div>
                                 <div class="label-txt">Curso de<br> <strong>Bootstrap</strong></div>
-                                <div class="label-valor">R$ 189,00</div>
+                                <div class="label-valor">R$ 359,00</div>
                             </label>
                         </li>
                         <li class="produto-selecao">
-                            <input type="checkbox" name="curso-php" class="curso-php" id="curso-html" value="Curso de PHP">
+                            <input type="checkbox" name="curso-php" class="curso-php" id="curso-html" value="300.00">
                             <label for="curso-html">
                                 <div class="produtos-icons"><i class="fab fa-html5 icons-prod"></i></div>
                                 <div class="label-txt">Curso de<br> <strong>HTML5</strong></div>
-                                <div class="label-valor">R$ 189,00</div>
+                                <div class="label-valor">R$ 300,00</div>
                             </label>
                         </li>
                     </ul>
@@ -66,10 +66,10 @@
 
             <div class="content-95-1000 main_total grid-container">
                 <div class="box50">
-                    <h2>Total: <strong>R$ 250,00</strong></h2>
+                    <div class="total_cursos" id="total_cursos"><i class="fas fa-shopping-cart icon-lightgray"></i> Carrinho vazio!</div>
                 </div>
                 <div class="box50">
-                    <div class="main_finalizar_compra bt-radius bt-blue">Finalizar compra</div>
+                    <div class="main_finalizar_compra bt-radius bt-blue">Comprar</div>
                 </div>
 
                 <div class="clear"></div>
@@ -81,6 +81,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="css/icons-fontawesome/js/all.js"></script>
+    <script src="js/soma-cursos.js"></script>
 
 </body>
 
