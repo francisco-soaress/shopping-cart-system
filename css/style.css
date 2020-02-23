@@ -38,8 +38,8 @@ header h1{font-size: 2em; color: #333; text-transform: uppercase; font-weight: 7
 /* ======================= */
 /* ==== AREA DE TOTAL ==== */
 /* ======================= */
-.main_total h2{font-size: 1.4em; color:#333; font-weight: 700;}
-.main_total h2 strong{color:#555; font-weight: 300;}
+.main_total .total_cursos{font-size: 1.4em; color:#333; font-weight: 700;}
+.main_total .total_cursos strong{color:#555; font-weight: 300;}
 
 
 @media (max-width: 992px) { 
