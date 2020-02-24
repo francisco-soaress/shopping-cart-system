@@ -68,6 +68,7 @@ h6{font-size: 0.375em;}
 .content-95-1300{display: block; margin: 0 auto; padding: 30px 0; width: 95%; max-width: 1300px; -webkit-transition:all 0.5s ease; transition:all 0.5s ease;}
 
 /* ----- BOXs ----- */
+.box25{width: 25%; float: left; transition:all 0.5s ease;}
 .box30{width: 30%; float: left; transition:all 0.5s ease;}
 .box35{width: 35%; float: left; transition:all 0.5s ease;}
 .box40{width: 40%; float: left; transition:all 0.5s ease;}
@@ -197,6 +198,9 @@ h6{font-size: 0.375em;}
 .bt-blue{background: #3b6dac;}
 .bt-blue:hover{background: #2f5d97; transition:all 0.3s ease;}
 
+.bt-lightgray{background: #ccc;}
+.bt-lightgray:hover{background: #ccc; transition:all 0.3s ease;}
+
 .bt-blue-border-bottom{background: #3b6dac; border-bottom: 4px solid #2f5d97;}
 .bt-blue-border-bottom:hover{background: #2f5d97; transition:all 0.3s ease;}
 
@@ -234,14 +238,17 @@ h6{font-size: 0.375em;}
     transition:all 0.3s ease;
 }
 
-.bt-radius-line-white{border: 1px solid #fff;}
-.bt-radius-line-white:hover{background: #fff; transition:all 0.3s ease; color: #3b6dac;}
+.bt-radius-line-white{border: 1px solid #fff; transition:all 0.3s ease;}
+.bt-radius-line-white:hover{background: #fff; color: #3b6dac;}
 
 .bt-radius-line-red{border: 1px solid #d12121; color: #d12121;}
 .bt-radius-line-red:hover{background: #d12121;  color: #fff;}
 
-.bt-radius-line-blue{border: 1px solid #3b6dac; color: #3b6dac;}
-.bt-radius-line-blue:hover{background: #3b6dac; transition:all 0.3s ease; color: #fff;}
+.bt-radius-line-blue{border: 1px solid #3b6dac; color: #3b6dac; transition:all 0.3s ease;}
+.bt-radius-line-blue:hover{background: #3b6dac; color: #fff;}
+
+.bt-radius-line-green{border: 1px solid #22b85b; color: #22b85b; transition:all 0.3s ease;}
+.bt-radius-line-green:hover{background: #22b85b; color: #fff;}
 
 .bt-radius-blue{background-image: linear-gradient(#152e59, #3669c2); color: #fff; border: 4px #214480 solid; font-size: 1.6em; padding: 15px 30px;}
 .bt-radius-blue:hover{background: linear-gradient(#3669c2, #152e59 ); transition:all 0.3s ease; color: #fff;}
@@ -408,6 +415,7 @@ h6{font-size: 0.375em;}
 
 /* ==== colors icons ==== */
 .icon-lightgray{color: #ccc;}
+.icon-lightgreen{color: #26fba9 !important;}
 
 
 
@@ -452,7 +460,7 @@ h6{font-size: 0.375em;}
  /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
     /* ----- BOXs ----- */
-    .box30, .box35, .box40, .box45, .box50, .box55, .box60, .box65, .box70{width: 100%;}
+    .box25, .box30, .box35, .box40, .box45, .box50, .box55, .box60, .box65, .box70{width: 100%;}
  }
 
 /*  Small devices (landscape phones, 576px and up) */
