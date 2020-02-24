@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart System (Study)</title>
 
-    <link rel="stylesheet" href="css/bootcss.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/icons-fontawesome/css/all.css">
+    <link rel="stylesheet" href="cdn/css/bootcss.css">
+    <link rel="stylesheet" href="cdn/css/style.css">
+    <link rel="stylesheet" href="cdn/css/modal.css">
+    <link rel="stylesheet" href="cdn/css/icons-fontawesome/css/all.css">
 
 </head>
 
 <body>
+
+    <?php
+    require './cdn/modal/modal-loading.php';
+    ?>
+
     <header class="container">
         <div class="content-95-900">
             <i class="fab fa-connectdevelop logo"></i>
@@ -25,7 +31,9 @@
         <h2 class="fontzero">Selecione um produto</h2>
         <section class="container">
             <div class="content-95-1000">
-                <form name="" class="" id="" method="post" action="">
+                <form name="" class="send_form" id="" method="POST" action="">
+                    <input type="hidden" name="selecao_produto" value="produtos_selecionados">
+
                     <ul class="produtos-conteudos">
                         <li class="produto-selecao">
                             <input type="checkbox" name="curso-php" class="curso-php" id="curso-php" value="459.99">
@@ -60,29 +68,29 @@
                             </label>
                         </li>
                     </ul>
+
+                    <div class="content-95-1000 main_total grid-container">
+                        <div class="box50">
+                            <div class="total_cursos" id="total_cursos"><i class="fas fa-shopping-cart icon-lightgray"></i> Carrinho vazio!</div>
+                        </div>
+                        <div class="box50 botao_comprar" id="botao_comprar">
+                            <button type="button" disabled class="main_finalizar_compra bt-radius bt-lightgray">Comprar</button>
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
                 </form>
                 <div class="clear"></div>
             </div>
 
-            <div class="content-95-1000 main_total grid-container">
-                <div class="box50">
-                    <div class="total_cursos" id="total_cursos"><i class="fas fa-shopping-cart icon-lightgray"></i> Carrinho vazio!</div>
-                </div>
-                <div class="box50">
-                    <div class="main_finalizar_compra bt-radius bt-blue">Comprar</div>
-                </div>
-
-                <div class="clear"></div>
-            </div>
         </section>
     </main>
 
-
-
+    <script src="cdn/js/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="css/icons-fontawesome/js/all.js"></script>
-    <script src="js/soma-cursos.js"></script>
-
+    <script src="cdn/css/icons-fontawesome/js/all.js"></script>
+    <script src="cdn/js/soma-cursos.js"></script>
+    <script src="cdn/js/send-form.js"></script>
 </body>
 
 </html>
