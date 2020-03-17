@@ -36,7 +36,7 @@
 
                     <ul class="produtos-conteudos">
                         <li class="produto-selecao">
-                            <input type="checkbox" name="curso-php" class="curso-php" id="curso-php" value="459.99">
+                            <input type="checkbox" name="curso_php" class="curso" id="curso-php" value="459.99">
                             <label for="curso-php">
                                 <div class="produtos-icons"><i class="fab fa-php icons-prod"></i></div>
                                 <div class="label-txt">Curso de<br> <strong>PHP OO</strong></div>
@@ -44,7 +44,7 @@
                             </label>
                         </li>
                         <li class="produto-selecao">
-                            <input type="checkbox" name="curso-php" class="curso-php" id="curso-jquery" value="359.00">
+                            <input type="checkbox" name="curso_jquery" class="curso" id="curso-jquery" value="359.00">
                             <label for="curso-jquery">
                                 <div class="produtos-icons"><i class="fab fa-js icons-prod"></i></div>
                                 <div class="label-txt">Curso de<br> <strong>JQuery</strong></div>
@@ -52,7 +52,7 @@
                             </label>
                         </li>
                         <li class="produto-selecao">
-                            <input type="checkbox" name="curso-php" class="curso-php" id="curso-bootstrap" value="359.00">
+                            <input type="checkbox" name="curso_bootstrap" class="curso" id="curso-bootstrap" value="359.00">
                             <label for="curso-bootstrap">
                                 <div class="produtos-icons"><i class="fab fa-bootstrap icons-prod"></i></div>
                                 <div class="label-txt">Curso de<br> <strong>Bootstrap</strong></div>
@@ -60,7 +60,7 @@
                             </label>
                         </li>
                         <li class="produto-selecao">
-                            <input type="checkbox" name="curso-php" class="curso-php" id="curso-html" value="300.00">
+                            <input type="checkbox" name="curso_html5" class="curso" id="curso-html" value="300.00">
                             <label for="curso-html">
                                 <div class="produtos-icons"><i class="fab fa-html5 icons-prod"></i></div>
                                 <div class="label-txt">Curso de<br> <strong>HTML5</strong></div>

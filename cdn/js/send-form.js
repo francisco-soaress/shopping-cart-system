@@ -18,7 +18,7 @@ $(function(){
                 if(data.success){
                     window.setTimeout(function(){
                         window.location.href = 'https://localhost/_sites/_udemy/git-github/_web-fr/shopping-cart-system/checkout/';
-                    }, 5000);
+                    }, 500);
                 }
             }            
         });

@@ -11,12 +11,19 @@ if(empty($getPost['selecao_produto'])):
     $jSON['erro'] = true;
 
 else:
+    // link de referencia: https://www.youtube.com/watch?v=Len-JjpV4zI
     $Post = array_map('strip_tags', $getPost);
     $Action = $Post['selecao_produto'];
     unset($Post['selecao_produto']);
 
     switch($Action):
         case 'produtos_selecionados':
+
+            //inicio da sessão
+            session_start();
+            $_SESSION['cart-shopping'] = [];
+            array_push($_SESSION['cart-shopping'], $Post);
+            
             $jSON['success'] = true;            
         break;
     endswitch;
