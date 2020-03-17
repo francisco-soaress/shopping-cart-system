@@ -1,3 +1,7 @@
+<?php
+ob_start();
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -27,37 +31,86 @@
             <div class="content-95-900 main_finalizar_compra">
 
                 <ul>
-                    <li>
-                        <div class="box25">
-                            <i class="fab fa-js icons-prod-shopping-cart"></i>
-                        </div>
-                        <div class="box25">
-                            <div class="title_shopping_cart">Curso de JQuery</div>
-                        </div>
-                        <div class="box25">
-                            <div class="bt-radius-small bt-radius-line-red">X</div>
-                        </div>
-                        <div class="box25">
-                            <div class="value_shopping_cart">R$ 259,00</div>
-                        </div>
-                        <div class="clear"></div>
-                    </li>
-                    <li>
-                        <div class="box25">
-                            <i class="fab fa-js icons-prod-shopping-cart"></i>
-                        </div>
-                        <div class="box25">
-                            <div class="title_shopping_cart">Curso de JQuery</div>
-                        </div>
-                        <div class="box25">
-                            <div class="bt-radius-small bt-radius-line-red">X</div>
-                        </div>
-                        <div class="box25">
-                            <div class="value_shopping_cart">R$ 259,00</div>
-                        </div>
-                        <div class="clear"></div>
-                    </li>
-
+                    <?php
+                    foreach ($_SESSION['cart-shopping'] as $cart) :
+                        if (array_key_exists("curso_php", $cart)) :
+                            echo "
+                            <li>
+                                <div class='box25'>
+                                    <i class='fab fa-php icons-prod-shopping-cart'></i>
+                                </div>
+                                <div class='box25'>
+                                    <div class='title_shopping_cart'>Curso de PHP</div>
+                                </div>
+                                <div class='box25'>
+                                    <div class='bt-radius-small bt-radius-line-red'>X</div>
+                                </div>
+                                <div class='box25'>
+                                    <div class= value_shopping_cart >{$cart['curso_php']}</div>
+                                </div>
+                                <div class='clear'></div>
+                            </li>
+                            ";
+                        endif;
+                        if (array_key_exists("curso_jquery", $cart)) :
+                            echo "
+                            <li>
+                                <div class='box25'>
+                                    <i class='fab fa-js icons-prod-shopping-cart'></i>
+                                </div>
+                                <div class='box25'>
+                                    <div class='title_shopping_cart'>Curso de JQuery</div>
+                                </div>
+                                <div class='box25'>
+                                    <div class='bt-radius-small bt-radius-line-red'>X</div>
+                                </div>
+                                <div class='box25'>
+                                    <div class= value_shopping_cart >{$cart['curso_jquery']}</div>
+                                </div>
+                                <div class='clear'></div>
+                            </li>
+                            ";
+                        endif;
+                        if (array_key_exists("curso_bootstrap", $cart)) :
+                            echo "
+                            <li>
+                                <div class='box25'>
+                                    <i class='fab fa-bootstrap icons-prod-shopping-cart'></i>
+                                </div>
+                                <div class='box25'>
+                                    <div class='title_shopping_cart'>Curso de Bootstrap</div>
+                                </div>
+                                <div class='box25'>
+                                    <div class='bt-radius-small bt-radius-line-red'>X</div>
+                                </div>
+                                <div class='box25'>
+                                    <div class= value_shopping_cart >{$cart['curso_bootstrap']}</div>
+                                </div>
+                                <div class='clear'></div>
+                            </li>
+                            ";                            
+                        endif;
+                        if (array_key_exists("curso_html5", $cart)) :
+                            echo "
+                            <li>
+                                <div class='box25'>
+                                    <i class='fab fa-html5 icons-prod-shopping-cart'></i>
+                                </div>
+                                <div class='box25'>
+                                    <div class='title_shopping_cart'>Curso de HTML5</div>
+                                </div>
+                                <div class='box25'>
+                                    <div class='bt-radius-small bt-radius-line-red'>X</div>
+                                </div>
+                                <div class='box25'>
+                                    <div class= value_shopping_cart >{$cart['curso_html5']}</div>
+                                </div>
+                                <div class='clear'></div>
+                            </li>
+                            ";
+                        endif;
+                    endforeach;
+                    ?>
                 </ul>
                 <div class="clear"></div>
             </div>
@@ -139,3 +192,6 @@
 </body>
 
 </html>
+<?php
+/* encerro o buffer */
+ob_end_flush();
