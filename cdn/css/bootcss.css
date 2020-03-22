@@ -250,6 +250,9 @@ h6{font-size: 0.375em;}
 .bt-radius-line-green{border: 1px solid #22b85b; color: #22b85b; transition:all 0.3s ease;}
 .bt-radius-line-green:hover{background: #22b85b; color: #fff;}
 
+.bt-radius-line-lightgray{border: 1px solid #777; color: #777; transition:all 0.3s ease;}
+.bt-radius-line-lightgray:hover{background: #777; color: #fff;}
+
 .bt-radius-blue{background-image: linear-gradient(#152e59, #3669c2); color: #fff; border: 4px #214480 solid; font-size: 1.6em; padding: 15px 30px;}
 .bt-radius-blue:hover{background: linear-gradient(#3669c2, #152e59 ); transition:all 0.3s ease; color: #fff;}
 

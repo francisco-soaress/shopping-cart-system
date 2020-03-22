@@ -21,7 +21,7 @@ $(function(){
             $('.total_cursos').html("<i class='fas fa-shopping-cart icon-lightgray'></i> Total: <strong>R$ " + total + "</strong>");  
         }
         else{
-            $('.total_cursos').html("<i class='fas fa-shopping-cart icon-lightgray'></i> Total: <strong>R$ " + total + "</strong>");  
+            $('.total_cursos').html("<i class='fas fa-shopping-cart icon-lightgray'></i> Total: <strong> " + total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) + "</strong>");  
             $('#botao_comprar').html("<button class='main_finalizar_compra bt-radius bt-blue'>Comprar</button>"); 
         }
                
